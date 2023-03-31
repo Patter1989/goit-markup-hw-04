@@ -45,11 +45,11 @@ img {
 }
 
 .link {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
+  color: var(--navy-blue); */
   text-decoration: none;
 }
 
@@ -162,6 +162,7 @@ img {
 
 .hero {
   max-width: 1440px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--navy-blue);
@@ -206,6 +207,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  border: none;
 }
 
 .main-btn:hover,
@@ -410,13 +412,19 @@ img {
 /* =============CUSTOMERS============ */
 
 .customers {
-  padding-top: 130px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .customers-header {
-  text-align: center;
   margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--navy-blue);
 }
 
 .customers-list {
@@ -431,8 +439,6 @@ img {
 
 .customers-link:hover,
 .customers-link:focus {
-  border: 1px solid var(--iris);
-  border-radius: 4px;
   color: var(--iris);
 }
 
@@ -442,7 +448,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--light-slate);
+  border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--light-slate);
 }
@@ -471,7 +477,7 @@ img {
 
 .end-page>.container {
   display: flex;
-  gap: 120px;
+  /* gap: 120px; */
 }
 
 .footer-text {
@@ -492,6 +498,10 @@ img {
 
 .logo-studio-end-page {
   color: var(--cloud);
+}
+
+.social-media {
+  margin-left: 120px;
 }
 
 .social-media-header {
@@ -596,11 +606,14 @@ img {
 
 .our-projects-item {
   width: 360px;
-  border: 1px solid #F4F4FD;
+  }
+
+.our-projects-link {
+  display: block;
 }
 
-.our-projects-item:hover,
-.our-projects-item:focus {
+.our-projects-link:hover,
+.our-projects-link:focus {
   box-shadow: 
   0px 1px 6px rgba(46, 47, 66, 0.08),
   0px 1px 1px rgba(46, 47, 66, 0.16),
